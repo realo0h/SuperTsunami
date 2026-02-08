@@ -1,0 +1,5 @@
+name: SuperTsunami
+version: '1.0-SNAPSHOT'
+author: "chromiey, o0hw"
+main: water.lava.superTsunami.SuperTsunami
+api-version: '1.20'
