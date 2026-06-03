@@ -1,5 +1,17 @@
 name: SuperTsunami
-version: '1.0-SNAPSHOT'
+version: "${project.version}"
 author: "chromiey, o0hw"
 main: water.lava.superTsunami.SuperTsunami
-api-version: '1.20'
+api-version: "1.20"
+description: "Cursed infinite-flood plugin. Water, lava, and powder snow tsunamis with configurable speed, radius, and block protection."
+
+commands:
+  tsunami:
+    description: Manage SuperTsunami (reload config or stop all active floods)
+    usage: /tsunami <reload|stop>
+    permission: supertsunami.admin
+
+permissions:
+  supertsunami.admin:
+    description: Access to /tsunami reload and /tsunami stop
+    default: op

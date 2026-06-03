@@ -1,0 +1,50 @@
+# =============================================
+#         SuperTsunami — Configuration
+# =============================================
+
+# Delay in ticks between each spread step per liquid type.
+# Lower = faster.  (20 ticks = 1 second)
+spread-speed:
+  water:       7
+  lava:        45
+  powder_snow: 15
+
+# Maximum horizontal spread radius in blocks from where the bucket was placed.
+# Uses XZ-plane distance, so the shape is a circle.
+# Set to 0 for UNLIMITED — use with extreme caution on production servers!
+max-radius: 200
+
+# These blocks will NEVER be replaced by any liquid.
+# Add anything you want to protect: structures, portals, spawn platforms, etc.
+block-whitelist:
+  - BEDROCK
+  - OBSIDIAN
+  - BARRIER
+  - COMMAND_BLOCK
+  - CHAIN_COMMAND_BLOCK
+  - REPEATING_COMMAND_BLOCK
+  - END_PORTAL_FRAME
+  - END_PORTAL
+  - NETHER_PORTAL
+
+# Extra block types that CAN be replaced by the spreading liquid,
+# in addition to AIR (which is always replaceable).
+# Useful for making floods look natural — small plants get swept away.
+replaceable-extra:
+  - SHORT_GRASS
+  - FERN
+  - DEAD_BUSH
+  - POPPY
+  - DANDELION
+  - CORNFLOWER
+  - AZURE_BLUET
+  - OXEYE_DAISY
+  - ALLIUM
+  - ORANGE_TULIP
+  - RED_TULIP
+  - WHITE_TULIP
+  - PINK_TULIP
+  - BROWN_MUSHROOM
+  - RED_MUSHROOM
+  - SUGAR_CANE
+  - VINE
